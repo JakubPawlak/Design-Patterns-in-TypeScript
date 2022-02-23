@@ -13,7 +13,6 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-console.log('hello');
 var Resource = /** @class */ (function () {
     function Resource() {
     }
@@ -23,6 +22,7 @@ var Resource = /** @class */ (function () {
     };
     return Resource;
 }());
+// IMPLEMENTACJA DLA WINDOWS
 var WindowsFiltersService = /** @class */ (function () {
     function WindowsFiltersService() {
     }
@@ -41,6 +41,7 @@ var WindowsResource = /** @class */ (function (_super) {
     };
     return WindowsResource;
 }(Resource));
+// IMPLEMENTACJA DLA MOBILE
 var MobileFiltersService = /** @class */ (function () {
     function MobileFiltersService() {
     }
@@ -59,6 +60,7 @@ var MobileResource = /** @class */ (function (_super) {
     };
     return MobileResource;
 }(Resource));
+// WYWOŁANIE
 var dialog = new WindowsResource();
 dialog.find('windows query');
 var mobileDialog = new MobileResource();
