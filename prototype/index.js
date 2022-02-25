@@ -59,7 +59,6 @@ var App = /** @class */ (function () {
         this.shapes.push(circle);
         var circle2 = circle.clone();
         this.shapes.push(circle2);
-        console.log(this.shapes);
         this.copyList();
     }
     App.prototype.copyList = function () {
