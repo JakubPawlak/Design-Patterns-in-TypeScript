@@ -2,10 +2,10 @@ var Singleton = /** @class */ (function () {
     function Singleton() {
     }
     Singleton.getInstance = function () {
-        if (!this.instance) {
-            this.instance = new Singleton();
+        if (!Singleton.instance) {
+            Singleton.instance = new Singleton();
         }
-        return this.instance;
+        return Singleton.instance;
     };
     Singleton.prototype.log = function () {
         console.log("i'm Singleton");
